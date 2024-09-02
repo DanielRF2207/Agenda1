@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda para Contatos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        header {
+            background-color: #968e29;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #414141;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #00ff08;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Agenda para contatos</h1>
+    </header>
+
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#contatos">Contatos</a>
+        <a href="#formulario">Adicionar Contato</a>
+    </nav>
+
+    <section id="Inicio">
+        <h2>Bem-vindo à Agenda para Contatos</h2>
+        <p>Aqui você pode organizar e gerenciar seus contatos.</p>
+    </section>
+
+    <section id="contatos">
+        <h2>Lista de Contatos</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th>Parentesco</th>
+            </tr>
+            <tr>
+                <td>Enzo do Frifai</td>
+                <td>(48) 4002-8922</td>
+                <td>enzodofrifai@email.com</td>
+                <td>Amigo Virtual</td>
+            </tr>
+            <tr>
+                <td>Penelope Charmosa</td>
+                <td>(84) 2298-2004</td>
+                <td>penelopecorridas@email.com</td>
+                <td>Corrida em Familia</td>
+            </tr>
+        </table>
+
+        <h3>Outros Contatos:</h3>
+        <ul>
+            <li>Bolso - (22) 13225-17755</li>
+            <li>Naro - (17) 54321-09876</li>
+        </ul>
+
+        <ol>
+            <li>Contato mais antigo: Lula</li>
+            <li>Contato mais recente: Ladrão</li>
+        </ol>
+    </section>
+
+    <section id="formulario">
+        <h2>Adicionar Novo Contato</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento">
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade">
+
+            <label for="parentesco">Parentesco</label>
+            <input type="text" id="parentesco" name="parentesco">
+
+            <label for="origem">Origem do Contato</label>
+            <select id="origem" name="origem">
+                <option value="escola">Prisão</option>
+                <option value="trabalho">Escola</option>
+                <option value="night">Igreja</option>
+            </select>
+
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="nao-informou">Não Informar</option>
+            </select>
+
+            <label for="rede-social">Rede Social</label>
+            <input type="text" id="rede-social" name="rede-social">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agenda para Contatos</p>
+    </footer>
+
+</body>
+
+</html>
